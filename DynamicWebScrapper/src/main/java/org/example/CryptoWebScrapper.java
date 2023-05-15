@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 
 /**
- * Static data webscrapper
+ * Dynamic data webscrapper
  */
 public class CryptoWebScrapper {
     public static double price;
