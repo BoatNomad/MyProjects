@@ -76,15 +76,4 @@ public class CryptoWebScrapper {
 
     }
 
-    public static String getCurrency() {
-        return currency;
-    }
-
-    public static double getPrice() {
-        return price;
-    }
-
-    public static String getDate() {
-        return time;
-    }
 }
