@@ -38,6 +38,7 @@ public class CryptoWebScrapper {
 
         System.err.println(date() + " " + fetchDataCurrency(driver) + ": " + fetchDataPrice(driver));
         CryptoData.dbCollecting(price, currency, time);
+        driver.quit();
     }
 
 
@@ -79,14 +80,12 @@ public class CryptoWebScrapper {
     public static String fetchDataCurrency(WebDriver driver) {
         WebElement element = driver.findElement(By.cssSelector("span.inst-name")); //creating new variable element1
         currency = element.getText();
-        driver.quit();
         return currency;
     }
 
     public static double fetchDataPrice(WebDriver driver) {
         WebElement element = driver.findElement(By.cssSelector("span.rate")); //creating new variable element
         price = Double.parseDouble(element.getText());
-        driver.quit();
         return price;
     }
 
