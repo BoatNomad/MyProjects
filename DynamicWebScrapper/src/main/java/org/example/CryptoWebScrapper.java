@@ -31,7 +31,6 @@ public class CryptoWebScrapper {
 
 
     public static void main(String[] args) {
-        //mongod --dbpath C:\Users\pawel\Documents\Projekty_Java\Data
         WebDriver driver = browserSetup();
         date();
         fetchDataCurrency(driver);
